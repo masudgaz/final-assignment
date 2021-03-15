@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Navbar */
+nav {
+  background-color: #fc427b;
+  height: 50px;
+}
+/* Brand */
+.brand {
+  float: left;
+  width: 240px;
+  line-height: 50px;
+}
+.brand h2 {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* Nav Menu */
+.nav-menu {
+  float: left;
+}
+.nav-menu ul li {
+  display: inline-block;
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  /* margin-right: 20px; */
+  margin-left: 20px;
+}
+.nav-menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+.nav-menu ul li a:hover {
+  text-decoration: underline;
+  color: #f8efba;
+}
+/* Search */
+.search-box {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+}
+.input {
+  padding: 10px;
+  /* border-radius: 7px; */
+  border: none;
+  outline: none;
+  width: 300px;
+}
+.search-btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-left: -5px;
+  cursor: pointer;
+  width: 45px;
+  transition-duration: 0.3s;
+}
+.search-btn:hover {
+  background-color: #00cdac;
+  color: #fff;
+}
+
+/* Color Use  #00f2fe, #4facfe */
+/* Own Card design */
+.profile-section {
+  margin-top: 40px;
+  background-color: #efefee;
+  height: 400px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+.profile-section:hover {
+  box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.profile-section::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #00f2fe, #4facfe);
+  clip-path: circle(700px at -45% 50%);
+}
+/* #00f2fe, #4facfe */
+.card-profile {
+  float: left;
+  height: 100%;
+}
+/* image */
+.card-image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-left: 140px;
+  border: 10px solid #4facfe;
+}
+.card-image img {
+  width: 200px;
+  height: auto;
+}
+/* Mail */
+.mail {
+  position: absolute;
+  top: 15px;
+  right: 920px;
+}
+.mail a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.mail a:hover {
+  opacity: 1;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  position: absolute;
+  width: 21px;
+  height: 16px;
+  top: 15px;
+  left: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.hamburger-menu:hover {
+  opacity: 1;
+}
+.hamburger-menu .center {
+  position: absolute;
+  width: 70%;
+  height: 13%;
+  top: 50%;
+  background-color: #fff;
+  transform: translateY(-50%);
+  border-radius: 1px;
+}
+.hamburger-menu::after,
+.hamburger-menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.hamburger-menu::after {
+  top: 0;
+}
+.hamburger-menu::before {
+  bottom: 0;
+}
+/* Title Here */
+
+.title h2 {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 130px;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+.subTitle {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 190px;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* Profile Button */
+.profile-Button {
+  position: absolute;
+  bottom: 15px;
+  left: 95px;
+}
+.btn {
+  padding: 10px;
+  width: 130px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #fff;
+  /* #e52d27, #b31217 , #02aab0, #00cdac*/
+  background-image: linear-gradient(90deg, #e52d27, #b31217);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 1;
+}
+.btn2 {
+  padding: 10px;
+  width: 130px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #fff;
+  /* #e52d27, #b31217 , #02aab0, #00cdac*/
+  background-image: linear-gradient(90deg, #02aab0, #00cdac);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.btn2:hover {
+  opacity: 1;
+}
+/* Card Into */
+.card-intro {
+  width: 800px;
+  height: 100%;
+  float: right;
+  margin-top: 50px;
+  border-left: 2px solid #02aab0;
+}
+
+.card-intro h2 {
+  margin-left: 20px;
+  background-color: #00cdac;
+  margin-right: 20px;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.card-intro p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 20px;
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+  margin-right: 20px;
+  color: #5a5a5a;
+}
+.card-intro p::selection {
+  background-color: #00cdac;
+  color: #fff;
+}
+/* card-social */
+
+.card-social {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.icon {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #666;
+  width: 100px;
+  height: 100px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  opacity: 1;
+  color: #00cdac;
+}
+
+/* End Profile Card */

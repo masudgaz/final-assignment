@@ -1,0 +1,260 @@
+/* font-family: 'Baloo Thambi 2', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik', sans-serif; */
+
+:root {
+    /* Color */
+    --primary: #ff3838;
+    --seccon: #ff4d4d;
+    --pure: #fff;
+    --neon-blue: #18dcff;
+    --dark: #2f3640
+}
+/* Reset Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body */
+html, body {
+    -webkit-font-smoothing: antialiased;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* Float Clear */
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Container Section */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Top Navbar */
+
+.top-navbar {
+    background-color: #e4e4e4;
+    height: 25px;
+    position: relative;
+}
+
+.top-navbar .topnavbar-main div{
+    font-family: 'Baloo Thambi 2', cursive;
+    display: inline-block;
+    margin-right: 20px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.top-navbar .topnavbar-main .phone, .email, .app {
+    font-size: 12px;
+}
+
+.top-navbar .topnavbar-main .phone a{
+    color: #212121;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .8;
+    transition: 0.3s;
+}
+.top-navbar .topnavbar-main .phone a:hover {
+    opacity: 1;
+}
+
+.top-navbar .topnavbar-main .email a{
+    color: #212121;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .8;
+    transition: 0.3s;
+}
+.top-navbar .topnavbar-main .email a:hover {
+    opacity: 1;
+}
+.top-navbar .topnavbar-main .app p {
+    margin-left: 1130px;
+}
+.top-navbar .topnavbar-main .app a{
+    color: #212121;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .8;
+    transition: 0.3s;
+}
+.top-navbar .topnavbar-main .app a:hover {
+    opacity: 1;
+}
+
+.icon-color {
+    margin-right: 3px;
+    color: var(--primary);
+}
+
+/* !Top Navbar */
+
+/* Middle Navbar */
+
+.middle-navbar {
+    height: 50px;
+    position: relative;
+
+}
+
+.middleNavbar-main {
+    
+}
+
+.middle-navbar .middleNavbar-main div{
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    margin-right: 30px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.brand-name h2 {
+    position: absolute;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.brand-name h2 a {
+    text-decoration: none;
+    color: #212121;
+    opacity: .8;
+    transition: 0.3s;
+}
+
+.brand-name h2 a:hover {
+    opacity: 1;
+}
+
+.search-section {
+}
+
+.search-input {
+    margin-left: 350px;
+    position: absolute;
+    margin-top: 15px;
+    padding: 10px;
+    width: 800px;
+    border: 2px solid var(--primary);
+    outline: none;
+    opacity: .8;
+    transition: 0.3s;
+}
+
+.search-input:hover{
+    opacity: 1;
+}
+
+.search-btn {
+    position: absolute;
+    margin-left: 1150px;
+    margin-top: 15px;
+    padding: 12px;
+    width: 80px;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    color: var(--pure);
+    cursor: pointer;
+    opacity: .8;
+    transition: 0.3s;
+}
+.search-btn:hover{
+    opacity: 1;
+}
+
+.middle-icon {
+    position: absolute;
+    margin-left: 1250px;
+}
+
+.middle-icon a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #212121;
+    cursor: pointer;
+    opacity: .8;
+    transition: 0.3s;
+}
+
+.middle-icon a:hover {
+    opacity: 1;
+}
+
+/* !Middle Navbar */
+
+/* big navbar */
+
+.big-navbar {
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--dark);
+    margin-top: 15px;
+}
+
+.main-bitNabbar {
+}
+
+.nav-menu {
+    float: left;
+    width: 70%;
+}
+
+.nav-menu ul li, .nav-menuright ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-menu ul li a, .nav-menuright ul li a{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: var(--pure);
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #18dcff;
+}
+
+.nav-menuright ul li a:hover {
+    color: #18dcff;
+}
+
+.nav-menuright {
+    float: right;
+    width: 30%;
+}
+
+/* !big navbar */
+
+/* owl carousel slider */
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+}
+.item {
+    width: 1600px;
+    height: 700px;
+}
+.item img {
+    width: 1600px;
+    height: auto;
+}
+.item p{
+   
+}
+
+/* !owl carousel slider */

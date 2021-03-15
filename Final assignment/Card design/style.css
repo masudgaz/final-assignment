@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Navbar */
+nav {
+  background-color: #fc427b;
+  height: 50px;
+}
+/* Brand */
+.brand {
+  float: left;
+  width: 240px;
+  line-height: 50px;
+}
+.brand h2 {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* Nav Menu */
+.nav-menu {
+  float: left;
+}
+.nav-menu ul li {
+  display: inline-block;
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  /* margin-right: 20px; */
+  margin-left: 20px;
+}
+.nav-menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+.nav-menu ul li a:hover {
+  text-decoration: underline;
+  color: #f8efba;
+}
+/* Search */
+.search-box {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+}
+.input {
+  padding: 10px;
+  /* border-radius: 7px; */
+  border: none;
+  outline: none;
+  width: 300px;
+}
+.search-btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-left: -5px;
+  cursor: pointer;
+  width: 45px;
+  transition-duration: 0.3s;
+}
+.search-btn:hover {
+  background-color: #00cdac;
+  color: #fff;
+}
+
+/* Color Use  #00f2fe, #4facfe */
+
+/* Samsung Mobile 1*/
+.samsung-mobile {
+  margin-top: 50px;
+  height: 500px;
+}
+.sm-title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #414141;
+}
+/* card */
+.samsung {
+  margin: 18px;
+  float: left;
+  width: 300px;
+  height: 430px;
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.samsung:hover {
+  box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* samsung image */
+.samsung-image {
+  width: 300px;
+  margin-top: 10px;
+  height: 300px;
+  overflow: hidden;
+}
+.samsung-image img {
+  width: 300px;
+  height: auto;
+}
+
+.samsung-title h3 {
+  text-align: center;
+  margin-top: -40px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #515151;
+}
+.samsung-price {
+  text-align: center;
+  letter-spacing: 1px;
+  color: #515151;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.buyBtn {
+  text-align: center;
+  margin-left: 98px;
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #666;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.buyBtn:hover {
+  color: #00cdac;
+  opacity: 1;
+}
+
+.samsung-title h3::selection {
+  background-color: #00cdac;
+  color: #fff;
+}
+.samsung-price p::selection {
+  background-color: #00cdac;
+  color: #fff;
+}
+.samsung-price small::selection {
+  background-color: #00cdac;
+  color: #fff;
+}
+.samsung-price del::selection {
+  background-color: #00cdac;
+  color: #fff;
+}
